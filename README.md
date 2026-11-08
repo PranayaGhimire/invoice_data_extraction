@@ -65,7 +65,7 @@ You can obtain an API key from [Google AI Studio](https://aistudio.google.com/ap
 ### Step 1: Clone the repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+git clone https://github.com/PranayaGhimire/invoice_data_extraction.git
 cd invoice-extractor
 ```
 
@@ -95,7 +95,6 @@ Create a `.env` file in the project root using `.env.example` as a reference.
 
 ```env
 GEMINI_API_KEY=your_gemini_api_key
-GEMINI_MODEL=gemini-3.8-flash
 GOOGLE_GENAI_HTTP_CLIENT=httpx
 ```
 
@@ -105,7 +104,7 @@ Replace `your_gemini_api_key` with your actual Gemini API key.
 
 ## 6. Running the Application
 
-Place your invoice image inside the `samples/` directory.
+Place your invoice image inside the `invoices/` directory.
 
 Update the image path in `test_extraction.py` if necessary.
 
